@@ -1,30 +1,54 @@
-const randomP = document.getElementsByClassName('animate-text');
-const elmnt = document.getElementById("random-text");
 
-const text = [
-    'Nam posuere elementum lacus et semper. Sed sodales, risus non ultrices suscipit, purus urna ultricies eros, ac varius nulla quam non eros. Duis dapibus, nisi et tempor euismod, ante eros volutpat metus, at consequat sapien velit vitae dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus fringilla iaculis eleifend. Sed sit amet sem libero. Sed nec erat diam.',
-    'Nunc vitae sem nec felis aliquet placerat ac aliquam turpis. Quisque sem tellus, pharetra vitae nunc id, rutrum pretium quam. Curabitur cursus tincidunt dolor, eu eleifend lorem congue non. Aenean faucibus, sem et pretium consequat, ante nisl porttitor felis, volutpat laoreet odio eros vitae sapien. Ut nec enim magna. Nam lacinia libero nec nibh pellentesque accumsan. Donec ipsum eros, pellentesque in consequat non, hendrerit eu ligula. Aenean ante purus, blandit sit amet nulla vel, egestas eleifend eros. Nam consectetur nunc eu tortor venenatis pulvinar non ut augue. Praesent feugiat massa et nibh ultricies, ac luct',
-    'n ac tellus sed est sagittis convallis eu eu ante. Vivamus vitae ante pulvinar, vestibulum dui in, rhoncus lacus. Morbi pellentesque massa a pulvinar consequat. Vestibulum viverra nec sem nec suscipit. Phasellus justo tellus, lacinia ac mi sed, laoreet maximus diam. Cras diam erat, facilisis et ultrices ac,',
-    'Ut ultrices eros eget erat tempus, at varius ipsum sagittis. Maecenas interdum tempor eleifend. Mauris convallis mauris ut lobortis sagittis. Curabitur sed mauris finibus, pellentesque lectus placerat, tristique neque. In porttitor nunc magna, vel iaculis lectus ultricies id. Curabitur libero sapien, suscipit vel erat sed, porta congue eros. Quisque quis elit in ipsum sagittis venenatis. Donec egestas libero id libero placerat, eget fringilla orci pharetra. Maecenas'
-]
+const animate1 = document.querySelectorAll('.animate1 span');
+const animate2 = document.querySelectorAll('.animate2 span');
+const animate3 = document.querySelectorAll('.animate3 span');
+const animate4 = document.querySelectorAll('.animate4 span');
+const animate5 = document.querySelectorAll('.animate5 span');
+const animate6 = document.querySelectorAll('.animate6 span');
+var animate;
 
-for ( var i=0; i < randomP.length; i++ ) {
- 	
-    // shortcut! the current div in the list
-    var thisDiv = randomP[i];
-    
-    // get random numbers for each element
-    randomTop = getRandomNumber(0, elmnt.offsetHeight);
-    randomLeft = getRandomNumber(0, elmnt.offsetWidth);
-    
-    // update top and left position
-    thisDiv.style.top = randomTop +"px";
-    thisDiv.style.left = randomLeft +"px";
-    
+async function animate() {
+
+    setTimeout(() => {
+        for (var i = 0; i < animate1.length; i++) {
+            animate1[i].style.animation = "fade-in 0.4s 1."+i+"s forwards cubic-bezier(0.11, 0, 0.5, 0)";
+            animate  = animate1[i]
+        }
+    }, 200);
+
+    setTimeout(() => {
+        for (var i = 0; i < animate2.length; i++) {
+            animate2[i].style.animation = "fade-in 0.4s 1."+i+"s forwards cubic-bezier(0.11, 0, 0.5, 0)";
+            animate  = animate2[i]
+        }
+    }, 1000 * 2);
+    setTimeout(() => {
+        for (var i = 0; i < animate3.length; i++) {
+            animate3[i].style.animation = "fade-in 0.4s 1."+i+"s forwards cubic-bezier(0.11, 0, 0.5, 0)";
+            animate  = animate3[i]
+        }
+    }, 2000 * 2);
+
+    setTimeout(() => {
+        for (var i = 0; i < animate4.length; i++) {
+            animate4[i].style.animation = "fade-in 0.4s 1."+i+"s forwards cubic-bezier(0.11, 0, 0.5, 0)";
+            animate  = animate4[i]
+        }
+    }, 3000 * 2);
+
+    setTimeout(() => {
+        for (var i = 0; i < animate5.length; i++) {
+            animate5[i].style.animation = "fade-in 0.4s 1."+i+"s forwards cubic-bezier(0.11, 0, 0.5, 0)";
+            animate  = animate5[i]
+        }
+    } , 4000 * 2);
+    setTimeout(() => {
+        for (var i = 0; i < animate6.length; i++) {
+            animate6[i].style.animation = "fade-in 0.4s 1."+i+"s forwards cubic-bezier(0.11, 0, 0.5, 0)";
+            animate  = animate6[i]
+        }
+    } , 5000 * 2);
 }
 
-function getRandomNumber(min, max) {
-    
-    return Math.random() * (max - min) + min;
-      
-}
+animate();
+

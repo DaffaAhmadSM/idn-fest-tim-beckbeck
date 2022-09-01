@@ -18,21 +18,17 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: #d3d3d3;
 }
-
-#random-text{
-    height: 40vmin;
-    width: 60%;
-    left: 25%;
-    position: absolute;
-    border: 1px solid #000;
-}
-
-.animate-text{
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    animation: animated-text 10s linear infinite;
-}
+span {
+    display: inline-block;
+    color: #fff;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
