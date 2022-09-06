@@ -1,9 +1,31 @@
-body{
-    margin: 0;
-    overflow: hidden;
+body {
+  margin: 0;
+  overflow: hidden;
 }
 
-.orang{
+@keyframes animatecolor {
+  0% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #353535;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.container {
+  animation: animatecolor 1.5s;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .orang {
+    width: 100%;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -11,112 +33,174 @@ body{
     bottom: 0;
     right: 0;
     overflow: hidden;
-}
-.container{
+  }
+  .container {
     background-color: #353535;
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    animation: animatecolor 2s;
+    font-size: 1rem;
+  }
+
+  .container span {
+    display: inline-block;
+    color: #fff;
+    opacity: 0;
+    filter: blur(4px);
+    top: 100%;
+  }
+  .animate6 {
+    position: absolute;
+    top: 60vmin;
+    left: 25vmax;
+  }
+  .animate4 {
+    position: absolute;
+    top: 40vmin;
+    left: 10vmax;
+  }
+
+  .animate3 {
+    position: absolute;
+    top: 30vmin;
+    left: 25vmax;
+  }
+
+  .animate2 {
+    position: absolute;
+    top: 10vmin;
+    left: 10vmax;
+  }
+
+  .animate5 {
+    position: absolute;
+    top: 90vmin;
+    left: 20vmax;
+  }
+
+  .animate1 {
+    position: absolute;
+    top: 75vmin;
+    left: 5vmax;
+  }
 }
-@keyframes animatecolor{
-    0%{
-        background-color: #ffffff;
-    }
-    100%{
-        background-color: #353535;
-    }
-}
-span {
+@media screen and (min-width: 576px) {
+  .container {
+    background-color: #353535;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 1.5rem;
+  }
+  .container span {
     display: inline-block;
     color: #fff;
     opacity: 0;
     filter: blur(4px);
   }
-  
-  @keyframes fade-in {
-    100% {
-      opacity: 1;
-      filter: blur(0);
-    }
+  .orang {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  .animate5 {
+    position: absolute;
+    top: 10vmin;
+    left: 45vmax;
+  }
+  .animate4 {
+    position: absolute;
+    top: 40vmin;
+    left: 10vmax;
   }
 
-  .container {
-    font-size: 2rem;
+  .animate3 {
+    position: absolute;
+    top: 25vmin;
+    left: 30vmax;
   }
 
+  .animate2 {
+    position: absolute;
+    top: 10vmin;
+    left: 3vmax;
+  }
 
-@media screen and (min-width: 992px) {
-    .animate6 {
-        position: absolute;
-        top: 10vmin;
-        left: 60vmax;
-    }
-    .animate4 {
-            position: absolute;
-            top: 40vmin;
-            left: 10vmax;
-    }
-    
-       .animate3 {
-            position: absolute;
-            top: 20vmin;
-            left: 30vmax;
-    }
-    
-    .animate2 {
-            position: absolute;
-            top: 10vmin;
-            left: 10vmax;
-    }
-    
-    .animate5 {
-            position: absolute;
-            top: 40vmin;
-            left: 60vmax;
-    }
-    
-    .animate1 {
-            position: absolute;
-            top: 25vmin;
-            left: 75vmax;
-    }
+  .animate6 {
+    position: absolute;
+    top: 30vmin;
+    left: 40vmax;
+  }
+
+  .animate1 {
+    position: absolute;
+    top: 30vmin;
+    left: 6vmax;
+  }
 }
+@media screen and (min-width: 820px) {
+  .container {
+    background-color: #353535;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .container span {
+    font-size: 2rem;
+    display: inline-block;
+    color: #fff;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  .orang {
+    width: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  .animate6 {
+    position: absolute;
+    top: 10vmin;
+    left: 60vmax;
+  }
+  .animate4 {
+    position: absolute;
+    top: 40vmin;
+    left: 10vmax;
+  }
 
-@media screen and (max-width: 991px){
-    .animate6 {
-        position: absolute;
-        top: 10vmin;
-        left: 60vmax;
-    }
-    .animate4 {
-            position: absolute;
-            top: 40vmin;
-            left: 10vmax;
-    }
-    
-       .animate3 {
-            position: absolute;
-            top: 20vmin;
-            left: 30vmax;
-    }
-    
-    .animate2 {
-            position: absolute;
-            top: 10vmin;
-            left: 10vmax;
-    }
-    
-    .animate5 {
-            position: absolute;
-            top: 40vmin;
-            left: 60vmax;
-    }
-    
-    .animate1 {
-            position: absolute;
-            top: 25vmin;
-            left: 75vmax;
-    }
+  .animate3 {
+    position: absolute;
+    top: 20vmin;
+    left: 30vmax;
+  }
+
+  .animate2 {
+    position: absolute;
+    top: 10vmin;
+    left: 10vmax;
+  }
+
+  .animate5 {
+    position: absolute;
+    top: 40vmin;
+    left: 60vmax;
+  }
+
+  .animate1 {
+    position: absolute;
+    top: 25vmin;
+    left: 75vmax;
+  }
 }
