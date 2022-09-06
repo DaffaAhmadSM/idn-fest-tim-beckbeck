@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/index.css" />
     <title>Document</title>
-</head>
-<body>
-    <nav>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container">
+        <img src="/image/asset_orang.png" alt="logo" />
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="animation.html">Animation</a></li>
-            <li><a href="about.html">About</a></li>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#beranda">Tentang</a></li>
+          <li><a href="#beranda">Gejala</a></li>
+          <li><a href="#beranda">Dampak</a></li>
         </ul>
+        <button type="button">Cek Kecemasan</button>
+      </div>
     </nav>
-</body>
+
+    <nav id="navbar-responsive">
+      <div id="navbar-responsive-top">
+        <a href="#beranda">Beranda</a>
+        <a href="javascript:void(0);" class="navbar-menu-icon" onclick="menuMobile()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <ul id="navbar-mobile" class="d-none">
+        <li><a href="#beranda">Tentang</a></li>
+        <li><a href="#beranda">Gejala</a></li>
+        <li><a href="#beranda">Dampak</a></li>
+      </ul>
+    </nav>
+  </body>
 </html>
