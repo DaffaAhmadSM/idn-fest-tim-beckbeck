@@ -83,7 +83,7 @@ async function animate() {
     setTimeout(() => {
         //make animate false and save it in localstorage
         localStorage.setItem('animaterun', 'set');
-        window.location.replace("/alert.html");
+        window.location.replace("/question.html");
     } , 7000 * 2.6);
 }
 if (!localStorage.getItem('animaterun')) {
