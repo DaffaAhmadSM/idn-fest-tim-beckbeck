@@ -1,105 +1,105 @@
 let currentQuestion = 0;
 let score = 0;
- 
+const questionarea = document.getElementById('question-area');
 let questions = [
    {
        question: "Saya merasa sangat sulit untuk tenang dan santai",
        answers: [
-           {option: "Never", point: 1},
-           {option: "Rarely", point: 2},
-           {option: "Sometimes", point: 3},
-           {option: "Often", point: 4},
-           {option: "Always", point: 5}           
+           {option: "Tidak Pernah", point: 1},
+           {option: "Jarang", point: 2},
+           {option: "Terkadang", point: 3},
+           {option: "Sering", point: 4},
+           {option: "Sangat Sering", point: 5}           
        ]
    },
    {
         question: "Saya memiliki masalah perut, seperti merasa sakit atau kram perut",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
     {
         question: "Saya mudah merasa terganggu oleh hal-hal yang tidak penting",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
     {
         question: "Saya sering mengalami sesak napas",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
     {
         question: "Saya terkadang merasa pusing",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
     {
         question: "Saya memiliki masalah tidur, seperti sulit untuk tidur atau terbangun terlalu awal",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
     {
         question: "Saya merasa panik dan kewalahan oleh hal-hal di sekitar saya",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
     {
         question: "Saya sering merasa gugup dan gelisah",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
     {
         question: "Tangan saya sering gemetar",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
     {
         question: "Saya sepertinya terus-menerus mengkhawatirkan banyak hal",
         answers: [
-            {option: "Never", point: 1},
-            {option: "Rarely", point: 2},
-            {option: "Sometimes", point: 3},
-            {option: "Often", point: 4},
-            {option: "Always", point: 5}           
+            {option: "Tidak Pernah", point: 1},
+            {option: "Jarang", point: 2},
+            {option: "Terkadang", point: 3},
+            {option: "Sering", point: 4},
+            {option: "Sangat Sering", point: 5}           
         ]
     },
 ]
@@ -127,23 +127,50 @@ function selectAnswer(point) {
         loadQuestion();
     }
     else {
-        showResult();
+        showPopupResult();
     }
 }
 
-function showResult() {
-    if (localStorage.getItem("score")) {
-        window.location.replace("/result.html");
-    }else{
-        localStorage.setItem("score", score);
-        window.location.replace("/result.html");
+function showPopupResult() {
+    let popupResult = document.getElementById('popup-result');
+    let body = document.querySelector('body');
+    let svg = document.getElementById('svg');
+    let result = document.getElementById('popup-result-title');
+    popupResult.style.display = 'block';
+    questionarea.style.display = 'none';
+    body.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
+    svg.style.opacity = '0.5';
+    if (score <= 10) {
+        result.innerHTML = 'Anda tidak mengalami gejala depresi';
     }
-    
+    else if (score <= 20) {
+        result.innerHTML = 'Anda mengalami gejala depresi ringan';
+    }
+    else if (score <= 30) {
+        result.innerHTML = 'Anda mengalami gejala depresi sedang';
+    }
+    else {
+        result.innerHTML = 'Anda mengalami gejala depresi berat';
+    }
 }
 
-if (!localStorage.getItem("score")) {
+function retry() {
+    let popupResult = document.getElementById('popup-result');
+    let body = document.querySelector('body');
+    let questionarea = document.getElementById('question-area');
+    let svg = document.getElementById('svg');
+    let result = document.getElementById('popup-result-title');
+    popupResult.style.display = 'none';
+    questionarea.style.display = 'flex';
+    body.style.backgroundColor = 'white';
+    svg.style.opacity = '1';
+    currentQuestion = 0;
+    score = 0;
     loadQuestion();
-}else{
-    showResult();
 }
+
+setTimeout(() => {
+    loadQuestion()
+    questionarea.style.animation = 'fade-in 4s 1s forwards';
+}, 6000 );
 

@@ -19,8 +19,15 @@ body {
   }
 }
 
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+    filter: blur(0);
+  }
+}
+
 .container {
-  animation: animatecolor 1.5s;
+  animation: animatecolor 2s;
 }
 
 @media screen and (min-width: 0px) and (max-width: 576px) {

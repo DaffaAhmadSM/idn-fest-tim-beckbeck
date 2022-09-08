@@ -8,11 +8,60 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="alert-text">Text</div>
     <div class="container" id="question-area">
         <div id="index-question"></div>
+        <div class="underline"></div>
         <div id="question"></div>
-        <div id="answers">
-        </div> 
+        <div id="answers"></div>
+        
+      </div>
+      <div id="popup-result">
+          <div id="popup-result-content">
+              <div id="popup-result-title"> ABC</div>
+              <div id="popup-result-description">ABC</div>
+              <div class="button-result">
+                <button id="popup-result-button-home">Kembali Ke Beranda</button>
+                <button id="popup-result-button-retry" onclick=retry()>Coba Test Lagi</button>
+              </div>
+          </div>
+      </div>
+  <div id="svg">
+    <svg class="blob-svg"viewBox="0 0 600 500" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+        <path class="blob1" fill="#FFD6E8">
+          <animate
+          attributeName="d"
+          dur="9000ms"
+          repeatCount="indefinite"
+          values="
+          M444.5,297Q412,344,385,390.5Q358,437,304,459Q250,481,192,465.5Q134,450,98,404Q62,358,47.5,304Q33,250,39,190.5Q45,131,97.5,103.5Q150,76,200,61.5Q250,47,288.5,81.5Q327,116,357.5,143Q388,170,432.5,210Q477,250,444.5,297Z;
+          M424.5,303.5Q435,357,388,382.5Q341,408,295.5,442Q250,476,206.5,438.5Q163,401,139,364.5Q115,328,60,289Q5,250,60,211Q115,172,139.5,136Q164,100,207,96Q250,92,289.5,103Q329,114,383,128Q437,142,425.5,196Q414,250,424.5,303.5Z;
+          M468.5,305Q440,360,388,379.5Q336,399,293,420Q250,441,203,426.5Q156,412,137.5,369Q119,326,92.5,288Q66,250,93,212.5Q120,175,123.5,106Q127,37,188.5,60.5Q250,84,301,79Q352,74,387,112.5Q422,151,459.5,200.5Q497,250,468.5,305Z;
+          M432,310Q457,370,411.5,410Q366,450,308,458Q250,466,205.5,435.5Q161,405,102.5,387Q44,369,35.5,309.5Q27,250,54,201Q81,152,120.5,123Q160,94,205,84.5Q250,75,291.5,90.5Q333,106,389,121.5Q445,137,426,193.5Q407,250,432,310Z;
+          M444.5,297Q412,344,385,390.5Q358,437,304,459Q250,481,192,465.5Q134,450,98,404Q62,358,47.5,304Q33,250,39,190.5Q45,131,97.5,103.5Q150,76,200,61.5Q250,47,288.5,81.5Q327,116,357.5,143Q388,170,432.5,210Q477,250,444.5,297Z;
+          "
+          >
+
+          </animate>
+        </path>
+    </svg>
+    <svg class="blob-svg"viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+          <path class="blob2" fill="#A9E2F5">
+
+            <animate
+          attributeName="d"
+          dur="9000ms"
+          repeatCount="indefinite"
+          values="
+          M460.5,322Q422,394,351,407Q280,420,233,390.5Q186,361,137.5,335Q89,309,74,245Q59,181,121,158Q183,135,236,82.5Q289,30,363.5,61Q438,92,468.5,171Q499,250,460.5,322Z;
+          M463,330Q440,410,365.5,446Q291,482,225,445Q159,408,91.5,370Q24,332,69,266.5Q114,201,139.5,151.5Q165,102,225,78Q285,54,341.5,90Q398,126,442,188Q486,250,463,330Z;
+          M393.5,299Q366,348,323,384Q280,420,212.5,425.5Q145,431,113.5,371Q82,311,91.5,253.5Q101,196,140,161.5Q179,127,233,83Q287,39,350,76.5Q413,114,417,182Q421,250,393.5,299Z;
+          M426,328.5Q437,407,362,433Q287,459,228,424.5Q169,390,111.5,355.5Q54,321,77,258Q100,195,143.5,168Q187,141,239.5,77Q292,13,360,57Q428,101,421.5,175.5Q415,250,426,328.5Z;
+          M460.5,322Q422,394,351,407Q280,420,233,390.5Q186,361,137.5,335Q89,309,74,245Q59,181,121,158Q183,135,236,82.5Q289,30,363.5,61Q438,92,468.5,171Q499,250,460.5,322Z;
+          "
+          >
+          </path>
+      </svg>
     </div>
 
     <script src="js/question.js"></script>
