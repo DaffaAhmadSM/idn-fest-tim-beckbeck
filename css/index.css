@@ -318,10 +318,9 @@ body {
   height: 100%;
   overflow: hidden;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .faktor-kecemasan-slider-item img {
@@ -401,30 +400,29 @@ body {
 }
 
 .dampak-content h3 {
-    font-weight: 400;
-    font-size: 1.3rem;
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 
 .dampak-content p {
-    margin-top: 10px;
-    margin-left: 35px;
-    margin-bottom: 1rem;
+  margin-top: 10px;
+  margin-left: 35px;
+  margin-bottom: 1rem;
 }
 
 .dampak-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .dampak-title {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 2rem 0;
   display: flex;
   justify-content: center;
@@ -437,6 +435,25 @@ footer .text-footer {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.faktor-kecemasan-mobile {
+  background-color: #cfecf5;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  display: none;
+  padding-top: 5rem;
+}
+
+.faktor-kecemasan-mobile-title {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.faktor-kecemasan-mobile-item {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -495,6 +512,14 @@ footer .text-footer {
   }
 
   .dampak-img {
+    display: none;
+  }
+
+  .faktor-kecemasan-mobile {
+    display: block;
+  }
+
+  .faktor-kecemasan-body {
     display: none;
   }
 }
