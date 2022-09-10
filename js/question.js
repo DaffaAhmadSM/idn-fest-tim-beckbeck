@@ -187,23 +187,38 @@ function showPopupResult() {
     switch (true){
         case score < 14:
             result.innerHTML = 'Anda tidak mengalami gejala cemas';
-            description.innerHTML = 'Kamu tidak mengalami gejala cemas, tetaplah berusaha menjaga kesehatan mental dan fisikmu';
+            description.innerHTML = 
+            `test ini hanya berdasarkan gejala umum dari kecemasan, dari hasil test menunjukan bahwa Anda tidak mengalami gejala cemas tetaplah ingat bahwa test ini hanya menjadi indikasi dan tidak dapat digantikan untuk test yang asli.
+
+            mulai dari hasil ringan tambahin di akhir Akan lebih baik untuk memastikan ke psikolog agar anda mendapatkan penjelasan yang lebih tepat`;
             break;
         case score >= 14 && score <= 19:
             result.innerHTML = 'Anda mengalami gejala cemas ringan';
-            description.innerHTML = 'Kamu mengalami gejala cemas ringan, alihkan pikiran anda ke hal-hal yang positif dan berusaha untuk beristirahat lebih banyak';
+            description.innerHTML = 
+            `test ini hanya berdasarkan gejala umum dari kecemasan, dari hasil test menunjukan bahwa Anda mengalami gejala cemas ringan tetaplah ingat bahwa test ini hanya menjadi indikasi dan tidak dapat digantikan untuk test yang asli.
+
+            mulai dari hasil ringan tambahin di akhir Akan lebih baik untuk memastikan ke psikolog agar anda mendapatkan penjelasan yang lebih tepat`;
             break;
         case score >= 20 && score <= 28:
             result.innerHTML = 'Anda mengalami gejala cemas sedang';
-            description.innerHTML = 'Kamu mengalami gejala cemas sedang, segeralah mencari bantuan medis dan beristirahatlah lebih banyak';
+            description.innerHTML = 
+            `test ini hanya berdasarkan gejala umum dari kecemasan, dari hasil test menunjukan bahwa Anda mengalami gejala cemas sedang tetaplah ingat bahwa test ini hanya menjadi indikasi dan tidak dapat digantikan untuk test yang asli.
+
+            mulai dari hasil ringan tambahin di akhir Akan lebih baik untuk memastikan ke psikolog agar anda mendapatkan penjelasan yang lebih tepat`;
             break;
         case score >= 29 && score <= 40:
             result.innerHTML = 'Anda mengalami gejala cemas berat';
-            description.innerHTML = 'Secara emosional kamu mungkin merasa lebih sensitif dan bersemangat daripada biasanya, dan kamu juga mungkin merasa kurang percaya diri. Tetapi mungkin kamu bisa mengatasi kecemasan dengan cara melakukan konsultasi psikologi.';
+            description.innerHTML = 
+            `test ini hanya berdasarkan gejala umum dari kecemasan, dari hasil test menunjukan bahwa Anda mengalami gejala cemas berat tetaplah ingat bahwa test ini hanya menjadi indikasi dan tidak dapat digantikan untuk test yang asli.
+
+            mulai dari hasil ringan tambahin di akhir Akan lebih baik untuk memastikan ke psikolog agar anda mendapatkan penjelasan yang lebih tepat`;
             break;
         case score > 40:
             result.innerHTML = 'Anda mengalami gejala cemas sangat berat';
-            description.innerHTML = "Anda mungkin mempunyai masalah cemas yang sangat berat, segera konsultasikan dengan psikolog atau dokter terdekat. Jangan ragu untuk mencari bantuan medis!.";
+            description.innerHTML = 
+            `test ini hanya berdasarkan gejala umum dari kecemasan, dari hasil test menunjukan bahwa Anda mengalami gejala cemas sangat berat tetaplah ingat bahwa test ini hanya menjadi indikasi dan tidak dapat digantikan untuk test yang asli.
+
+            mulai dari hasil ringan tambahin di akhir Akan lebih baik untuk memastikan ke psikolog agar anda mendapatkan penjelasan yang lebih tepat`;
             break;
     }
 }
