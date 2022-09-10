@@ -3,105 +3,148 @@ let score = 0;
 const questionarea = document.getElementById('question-area');
 let questions = [
    {
-       question: "Saya merasa sangat sulit untuk tenang dan santai",
+       question: "Saya merasa cemas, khawatir, berfirasat buruk",
        answers: [
-           {option: "Tidak Pernah", point: 1},
-           {option: "Jarang", point: 2},
-           {option: "Terkadang", point: 3},
-           {option: "Sering", point: 4},
-           {option: "Sangat Sering", point: 5}           
+           {option: "Tidak Pernah", point: 0},
+           {option: "Jarang", point: 1},
+           {option: "Terkadang", point: 2},
+           {option: "Sering", point: 3},
+           {option: "Sangat Sering", point: 4}           
        ]
    },
    {
-        question: "Saya memiliki masalah perut, seperti merasa sakit atau kram perut",
+        question: "Saya merasa tegang, lelah, gelisah, gemetar, sulit untuk santai",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
     {
-        question: "Saya mudah merasa terganggu oleh hal-hal yang tidak penting",
+        question: "Saya takut terhadap banyak hal seperti takut terhadap gelap, takut terhadap orang asing, takut pada kerumuman",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
     {
-        question: "Saya sering mengalami sesak napas",
+        question: "Saya memiliki masalah tidur seperti sulit untuk tidur, tidur tidak memuaskan, merasa lelah saat bangun",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
     {
-        question: "Saya terkadang merasa pusing",
+        question: "Saya sulit untuk berkonsentrasi, sulit mengingat",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
     {
-        question: "Saya memiliki masalah tidur, seperti sulit untuk tidur atau terbangun terlalu awal",
+        question: "Saya mudah kehilangan minat dan kesengangan dalam hal-hal yang saya lakukan",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
     {
-        question: "Saya merasa panik dan kewalahan oleh hal-hal di sekitar saya",
+        question: "Saya memiliki masalah otot seperti nyeri otot, otot terasa kaku, gigi gemertak",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
     {
-        question: "Saya sering merasa gugup dan gelisah",
+        question: "elinga saya sering berdering dan pengelihatan saya sering kabur",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
     {
-        question: "Tangan saya sering gemetar",
+        question: "Saya mudah lemas, nyeri dada, denyut nadi meningkat",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
     {
-        question: "Saya sepertinya terus-menerus mengkhawatirkan banyak hal",
+        question: "Saya merasa dicekik, dada terasa ditekan, napas pendek/tersengal-sengal",
         answers: [
-            {option: "Tidak Pernah", point: 1},
-            {option: "Jarang", point: 2},
-            {option: "Terkadang", point: 3},
-            {option: "Sering", point: 4},
-            {option: "Sangat Sering", point: 5}           
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}           
         ]
     },
+    {
+        question: "Saya merasa mual, sulit BAB, sulit menelan makanan, perut terasa nyeri",
+        answers: [
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}
+        ]
+    },
+    {
+        question: "Saya susah untuk menahan buang air dan frekuensi berkemih meningkat",
+        answers: [
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}
+        ]
+    },
+    {
+        question: "Mulut saya sering kering, wajah mudah pucat, sering berkeringat, pusing",
+        answers: [
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}
+        ]
+    },
+    {
+        question: "Saya mudah gelisah, dan susah untuk tenang",
+        answers: [
+            {option: "Tidak Pernah", point: 0},
+            {option: "Jarang", point: 1},
+            {option: "Terkadang", point: 2},
+            {option: "Sering", point: 3},
+            {option: "Sangat Sering", point: 4}
+        ]
+
+    },
+
+
 ]
 
 function loadQuestion() {
@@ -136,21 +179,32 @@ function showPopupResult() {
     let body = document.querySelector('body');
     let svg = document.getElementById('svg');
     let result = document.getElementById('popup-result-title');
+    let description = document.getElementById('popup-result-description');
     popupResult.style.display = 'block';
     questionarea.style.display = 'none';
     body.style.backgroundColor = 'rgba(0, 0, 0, 0.3)';
     svg.style.opacity = '0.5';
-    if (score <= 10) {
-        result.innerHTML = 'Anda tidak mengalami gejala depresi';
-    }
-    else if (score <= 20) {
-        result.innerHTML = 'Anda mengalami gejala depresi ringan';
-    }
-    else if (score <= 30) {
-        result.innerHTML = 'Anda mengalami gejala depresi sedang';
-    }
-    else {
-        result.innerHTML = 'Anda mengalami gejala depresi berat';
+    switch (true){
+        case score < 14:
+            result.innerHTML = 'Anda tidak mengalami gejala cemas';
+            description.innerHTML = 'Kamu tidak mengalami gejala cemas, tetaplah berusaha menjaga kesehatan mental dan fisikmu';
+            break;
+        case score >= 14 && score <= 19:
+            result.innerHTML = 'Anda mengalami gejala cemas ringan';
+            description.innerHTML = 'Kamu mengalami gejala cemas ringan, alihkan pikiran anda ke hal-hal yang positif dan berusaha untuk beristirahat lebih banyak';
+            break;
+        case score >= 20 && score <= 28:
+            result.innerHTML = 'Anda mengalami gejala cemas sedang';
+            description.innerHTML = 'Kamu mengalami gejala cemas sedang, segeralah mencari bantuan medis dan beristirahatlah lebih banyak';
+            break;
+        case score >= 29 && score <= 40:
+            result.innerHTML = 'Anda mengalami gejala cemas berat';
+            description.innerHTML = 'Secara emosional kamu mungkin merasa lebih sensitif dan bersemangat daripada biasanya, dan kamu juga mungkin merasa kurang percaya diri. Tetapi mungkin kamu bisa mengatasi kecemasan dengan cara melakukan konsultasi psikologi.';
+            break;
+        case score > 40:
+            result.innerHTML = 'Anda mengalami gejala cemas sangat berat';
+            description.innerHTML = "Anda mungkin mempunyai masalah cemas yang sangat berat, segera konsultasikan dengan psikolog atau dokter terdekat. Jangan ragu untuk mencari bantuan medis!.";
+            break;
     }
 }
 
@@ -169,8 +223,8 @@ function retry() {
     loadQuestion();
 }
 
+
 setTimeout(() => {
     loadQuestion()
     questionarea.style.animation = 'fade-in 4s 1s forwards';
-}, 6000 );
-
+}, 15000 );
