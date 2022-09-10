@@ -423,6 +423,22 @@ body {
     margin-bottom: 1rem;
 }
 
+footer {
+  background-color: #FFFFFF;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vmax;
+}
+
+footer .text-footer {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   #navbar {
     display: none;
