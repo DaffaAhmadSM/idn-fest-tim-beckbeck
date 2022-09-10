@@ -8,28 +8,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="/js/index.js"></script>
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- Navigation -->
     <nav id="navbar">
-      <div class="container">
-        <img src="/image/asset_orang.png" alt="logo" />
-        <ul>
-          <li><a href="#beranda">Beranda</a></li>
-          <li><a href="#beranda">Tentang</a></li>
-          <li><a href="#beranda">Gejala</a></li>
-          <li><a href="#beranda">Dampak</a></li>
-        </ul>
-        <button type="button">Cek Kecemasan</button>
+      <!-- <div class=""> -->
+      <div class="navbar-logo">
+        <img src="./image/asset_orang.png" alt="logo" />
+        <h3>Unxios</h3>
       </div>
+      <ul>
+        <li><a href="#beranda" onclick="jumpTo('#header')">Beranda</a></li>
+        <li><a href="#tentang" onclick="jumpTo('#about')">Tentang</a></li>
+        <li>
+          <a href="#tingkatCemas" onclick="jumpTo('#tingkat-cemas')">Gejala</a>
+        </li>
+        <li><a href="#beranda">Dampak</a></li>
+      </ul>
+      <button type="button" onclick="window.location.href='animation.html'">
+        Cek Kecemasan
+      </button>
+      <!-- </div> -->
     </nav>
 
     <nav id="navbar-responsive">
-      <div id="navbar-responsive-top">
+      <div class="navbar-responsive-top">
         <a href="#beranda">Beranda</a>
-        <a href="javascript:void(0);" class="navbar-menu-icon" onclick="menuMobile()">
+        <a
+          href="javascript:void(0);"
+          class="navbar-menu-icon"
+          onclick="menuMobile()"
+        >
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -39,5 +50,234 @@
         <li><a href="#beranda">Dampak</a></li>
       </ul>
     </nav>
+    <!-- Navigation end -->
+
+    <header id="header">
+      <div class="header-content container">
+        <div class="header-left">
+          <div class="header-text">
+            <h1>Tingkatkan Kesadaran akan Kecemasan Mulai dari Sekarang</h1>
+            <p>
+              Kenali hal-hal tentang cemas disini mulai dari apa itu cemas,
+              gejala, dampak, dan jenis-jenisnya.
+            </p>
+          </div>
+          <div class="header-button">
+            <button type="button">Ayo Mulai</button>
+            <button type="button">Cek Kecemasan</button>
+          </div>
+        </div>
+        <img
+          src="./image/header.png"
+          alt="header-img"
+          width="464"
+          height="464"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="about-content container">
+          <div class="about-title">
+            <h2>Apa itu cemas?</h2>
+            <p>
+              Kecemasan adalah kondisi psikologis seseorang yang penuh dengan
+              rasa takut dan khawatir, dimana perasaan takut dan khawatir akan
+              sesuatu hal yang belum pasti akan terjadi.
+            </p>
+          </div>
+          <img
+            src="./image/about.png"
+            alt="about-image"
+            width="500"
+            height="500"
+          />
+        </div>
+      </section>
+
+      <section id="tingkat-cemas">
+        <div class="container flex-column">
+          <div class="tingkat-cemas-title">
+            <h2>TINGKAT KECEMASAN</h2>
+          </div>
+          <div class="tingkat-cemas-card-item">
+            <div class="tingkat-cemas-card">
+              <div class="tingkat-cemas-card-title">
+                <h3>RINGAN</h3>
+              </div>
+              <div class="tingkat-cemas-card-body">
+                <p>
+                  Kecemasan ini berhubungan dengan kehidupan sehari-hari.
+                  Kecemasan ini dapat memotivasi belajar menghasilkan
+                  pertumbuhan serta kreatifitas
+                </p>
+              </div>
+            </div>
+            <div class="tingkat-cemas-card">
+              <div class="tingkat-cemas-card-title">
+                <h3>SEDANG</h3>
+              </div>
+              <div class="tingkat-cemas-card-body">
+                <p>
+                  Kecemasan sedang memungkinkan seseorang memusatkan pada hal
+                  yang penting dan mengesampingkan yang lain, sehingga individu
+                  mengalami perhatian yang selektif, namun dapat melakukan
+                  sesuatu yang lebih terarah
+                </p>
+              </div>
+            </div>
+            <div class="tingkat-cemas-card">
+              <div class="tingkat-cemas-card-title">
+                <h3>BERAT</h3>
+              </div>
+              <div class="tingkat-cemas-card-body">
+                <p>
+                  Kecemasan berat sangat mempengaruhi persepsi individu,
+                  individu cenderung untuk memusatkan pada sesuatu yang terinci
+                  dan spesifik, serta tidak dapat berfikir tentang hal lain.
+                  Semua perilaku ditujukan untuk mengurangi ketegangan.
+                </p>
+              </div>
+            </div>
+            <div class="tingkat-cemas-card">
+              <div class="tingkat-cemas-card-title">
+                <h3>PANIK</h3>
+              </div>
+              <div class="tingkat-cemas-card-body">
+                <p>
+                  Pada tingkat panik dari kecemasan berhubungan dengan
+                  terperangah, ketakutan, dan teror. Karena mengalami kehilangan
+                  kendali, individu yang mengalami panik tidak dapat melakukan
+                  sesuatu walaupun dengan pengarahan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faktor-kecemasan">
+        <div class="faktor-kecemasan-body">
+          <div class="faktor-kecemasan-title">
+            <h2>FAKTOR PENYEBAB KECEMASAN</h2>
+          </div>
+          <div class="faktor-kecemasan-list">
+            <div class="faktor-kecemasan-slider">
+              <div class="faktor-kecemasan-slider-inner">
+                <div class="faktor-kecemasan-slider-item">
+                  <img src="./image/faktor-penyebab-1.png" alt="" />
+                  <h3>Lingkungan</h3>
+                  <p>
+                    Lingkungan atau sekitar tempat tinggal mempengaruhi cara
+                    berfikir individu tentang diri sendiri maupun orang lain.
+                  </p>
+                </div>
+                <div class="faktor-kecemasan-slider-item">
+                  <img src="./image/faktor-penyebab-1.png" alt="" />
+                  <h3>Kurang Interaksi</h3>
+                  <p>
+                    Kurangnya interaksi bisa menyebabkan perasaan dan perilaku
+                    hingga merasakan penderitaan dan ketidakmampuan melakukan
+                    fungsi keseharian, maka mungkin itu bisa menjadi tanda
+                    terjadi gangguan mental dan perlu mendapatkan bantuan.
+                  </p>
+                </div>
+                <div class="faktor-kecemasan-slider-item">
+                  <img src="./image/faktor-penyebab-1.png" alt="" />
+                  <h3>Emosi Yang Dipendam</h3>
+                  <p>
+                    Kecemasan bisa terjadi jika individu tidak mampu menemukan
+                    jalan keluar untuk perasaannya sendiri dalam hubungan
+                    personal ini, terutama jika dirinya menekan rasa marah atau
+                    frustasi dalam jangka waktu yang sangat lama.
+                  </p>
+                </div>
+                <div class="faktor-kecemasan-slider-item">
+                  <img src="./image/faktor-penyebab-1.png" alt="" />
+                  <h3>Kesehatan</h3>
+                  <p>
+                    Disaat seseorang dalam kondisi kesehatan yang kurang baik
+                    dapat menyebabkan timbulnya kecemasan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gejala">
+        <div class="gejala-title">
+          <h2>TANDA DAN GEJALA KECEMASAN</h2>
+        </div>
+        <div class="gejala-list container">
+          <div class="gejala-item">
+            <ul>
+              <li>Gelisah</li>
+              <li>Gugup</li>
+              <li>Tangan Gemetar</li>
+              <li>Banyak Berkeringat</li>
+              <li>Sulit Bernafas</li>
+            </ul>
+          </div>
+          <div class="gejala-item">
+            <ul>
+              <li>Mudah Khawatir</li>
+              <li>Bimbang</li>
+              <li>Sering Mengeluh</li>
+              <li>Mudah Tersinggung</li>
+              <li>Mudah Emosi</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="dampak">
+        <div class="container">
+          <div class="dampak-img">
+            <img src="./image/dampak.png" alt="dampak" />
+          </div>
+          <div class="dampak-body">
+            <div class="dampak-list">
+              <div class="dampak-title">
+                <h2>DAMPAK KECEMASAN</h2>
+              </div>
+              <div class="dampak-list">
+                <div class="dampak-content">
+                  <h3>Simtom Suasana Hati</h3>
+                  <p>
+                    Individu yang mengalami kecemasan memiliki perasaan akan
+                    adanya hukuman dan bencana yang mengancam dari suatu sumber
+                    tertentu yang tidak diketahui.
+                  </p>
+                </div>
+                <div class="dampak-content">
+                  <h3>Simtom Kognitif</h3>
+                  <p>
+                    Simtom kognitif yaitu kecemasan dapat menyebabkan
+                    kekhawatiran dan keprihatinan pada individu mengenai hal
+                    yang tidak menyenangkan yang mungkin terjadi. Individu
+                    tersebut tidak memperhatikan masalah yang ada, sehingga
+                    individu sering tidak bekerja atau belajar secara efektif,
+                    dan akhirnya akan menjadi lebih merasa cemas.
+                  </p>
+                </div>
+                <div class="dampak-content">
+                  <h3>Simtom Motor</h3>
+                  <p>
+                    Simtom motor merupakan gambaran rangsangan kognitif yang
+                    tinggi pada individu dan merupakan usaha untuk melindungi
+                    dirinya dari apa saja yang dirasanya mengancam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
