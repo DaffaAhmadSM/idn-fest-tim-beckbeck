@@ -73,7 +73,7 @@ let questions = [
         ]
     },
     {
-        question: "elinga saya sering berdering dan pengelihatan saya sering kabur",
+        question: "Telinga saya sering berdering dan pengelihatan saya sering kabur",
         answers: [
             {option: "Tidak Pernah", point: 0},
             {option: "Jarang", point: 1},
