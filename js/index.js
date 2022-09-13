@@ -67,3 +67,23 @@ slider.addEventListener("mousemove",function(e){
     innerSlider.style.left = `${x - startx}px`;
     coordinate();
 })
+
+//make animation on scroll
+function scrollTrigger(selector, options) {
+  const trigger = document.querySelectorAll(selector);
+  trigger.forEach((el) => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          el.classList.add("animate");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+    observer.observe(el);
+  });
+}
+
+scrollTrigger(".animate-on-scroll", {
+  rootMargin: "-250px",
+});

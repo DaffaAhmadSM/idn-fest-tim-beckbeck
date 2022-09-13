@@ -147,6 +147,7 @@ body {
   line-height: 60px;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  opacity: 0;
 }
 
 #header p {
@@ -155,12 +156,16 @@ body {
   letter-spacing: 0.07em;
   line-height: 30px;
   margin-bottom: 1.5rem;
+  opacity: 0;
+  animation-delay: 0.3s;
 }
 
 .header-button button {
   border-style: none;
   border-radius: 5px;
   font-weight: 900;
+  opacity: 0;
+  animation: slide-in-up 1s forwards 0.5s;
 }
 
 .header-button button:first-child {
@@ -178,8 +183,7 @@ body {
 #header img {
   width: 100%;
   max-width: 464px;
-  animation: fade 2s ease-in forwards;
-  /* height: auto; */
+  animation-duration: 1.5s;
 }
 
 /* About */
@@ -196,6 +200,7 @@ body {
 
 .about-content img {
   max-width: 43rem;
+  animation: fade 2s;
 }
 
 .about-title {
@@ -208,6 +213,7 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
   font-weight: 700;
+  animation-duration: 1.5s;
 }
 
 .about-title p {
@@ -215,6 +221,8 @@ body {
   line-height: 30px;
   letter-spacing: 0.2rem;
   font-size: 1.2rem;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
 }
 
 /* Tingkat Kecemasan */
@@ -638,7 +646,23 @@ footer .text-footer {
   }
 }
 
-@keyframes fade {
+.animate-on-scroll {
+  opacity: 0;
+}
+.animate.fadein{
+  animation: fadein 1s ease-in-out both;
+}
+.animate.slide-in-left{
+  animation: slide-in-left 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.animate.slide-in-up{
+  animation: slide-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.animate.slide-in-right{
+  animation: slide-in-right 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes fadein {
   0% {
     opacity: 0;
   }
@@ -650,9 +674,35 @@ footer .text-footer {
 
 @keyframes slide-in-left {
   0% {
+    opacity: 0;
     transform: translateX(-100%);
   }
   100% {
+    opacity: 1;
     transform: translateX(0);
   }
+}
+
+@keyframes slide-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
 }
