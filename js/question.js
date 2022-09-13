@@ -53,7 +53,7 @@ let questions = [
         ]
     },
     {
-        question: "Saya mudah kehilangan minat dan kesengangan dalam hal-hal yang saya lakukan",
+        question: "Saya mudah kehilangan minat dan kesenangan dalam hal-hal yang saya lakukan",
         answers: [
             {option: "Tidak Pernah", point: 0},
             {option: "Jarang", point: 1},
