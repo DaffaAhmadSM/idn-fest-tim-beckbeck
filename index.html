@@ -9,13 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="icon" href="./image/icon.png">
+    <link rel="icon" href="./image/icon.png" />
     <title>Unxios</title>
   </head>
   <body>
     <!-- Navigation -->
     <nav id="navbar">
-      <!-- <div class=""> -->
       <div class="navbar-logo">
         <svg
           width="112"
@@ -49,7 +48,6 @@
       <button type="button" onclick="window.location.href='question.html'">
         Cek Kecemasan
       </button>
-      <!-- </div> -->
     </nav>
 
     <nav id="navbar-responsive">
@@ -76,6 +74,7 @@
     </nav>
     <!-- Navigation end -->
 
+    <!-- Header -->
     <header id="header">
       <div class="header-content container">
         <div class="header-left">
@@ -106,8 +105,11 @@
         />
       </div>
     </header>
+    <!-- Header End -->
 
+    <!-- Main -->
     <main>
+      <!-- About -->
       <section id="about">
         <div class="about-content container">
           <div class="about-title">
@@ -127,14 +129,16 @@
           />
         </div>
       </section>
+      <!-- About End -->
 
+      <!-- Tingkat Cemas -->
       <section id="tingkat-cemas">
         <div class="container flex-column">
-          <div class="tingkat-cemas-title">
+          <div class="tingkat-cemas-title animate-on-scroll fadein">
             <h2>TINGKAT KECEMASAN</h2>
           </div>
           <div class="tingkat-cemas-card-item">
-            <div class="tingkat-cemas-card">
+            <div class="tingkat-cemas-card animate-on-scroll slide-in-left">
               <div class="tingkat-cemas-card-title">
                 <h3>RINGAN</h3>
               </div>
@@ -146,7 +150,7 @@
                 </p>
               </div>
             </div>
-            <div class="tingkat-cemas-card">
+            <div class="tingkat-cemas-card animate-on-scroll slide-in-right">
               <div class="tingkat-cemas-card-title">
                 <h3>SEDANG</h3>
               </div>
@@ -159,7 +163,7 @@
                 </p>
               </div>
             </div>
-            <div class="tingkat-cemas-card">
+            <div class="tingkat-cemas-card animate-on-scroll slide-in-left">
               <div class="tingkat-cemas-card-title">
                 <h3>BERAT</h3>
               </div>
@@ -172,7 +176,7 @@
                 </p>
               </div>
             </div>
-            <div class="tingkat-cemas-card">
+            <div class="tingkat-cemas-card animate-on-scroll slide-in-right">
               <div class="tingkat-cemas-card-title">
                 <h3>PANIK</h3>
               </div>
@@ -188,15 +192,19 @@
           </div>
         </div>
       </section>
+      <!-- Tingkat Cemas End -->
 
+      <!-- Faktor Kecemasan -->
       <section id="faktor-kecemasan">
         <div class="faktor-kecemasan-body">
-          <div class="faktor-kecemasan-title">
+          <div class="faktor-kecemasan-title animate-on-scroll fadein">
             <h2>FAKTOR PENYEBAB KECEMASAN</h2>
           </div>
           <div class="faktor-kecemasan-list">
             <div class="faktor-kecemasan-slider">
-              <div class="faktor-kecemasan-slider-inner">
+              <div
+                class="faktor-kecemasan-slider-inner animate-on-scroll slide-in-up"
+              >
                 <div class="faktor-kecemasan-slider-item">
                   <h3>Lingkungan</h3>
                   <p>
@@ -276,13 +284,15 @@
           </div>
         </div>
       </section>
+      <!-- Faktor Kecemasan End -->
 
+      <!-- Gejala -->
       <section id="gejala">
-        <div class="gejala-title">
+        <div class="gejala-title animate-on-scroll slide-in-up">
           <h2>TANDA DAN GEJALA KECEMASAN</h2>
         </div>
         <div class="gejala-list container">
-          <div class="gejala-item">
+          <div class="gejala-item animate-on-scroll slide-in-left">
             <ul>
               <li>Gelisah</li>
               <li>Gugup</li>
@@ -291,7 +301,7 @@
               <li>Sulit Bernafas</li>
             </ul>
           </div>
-          <div class="gejala-item">
+          <div class="gejala-item animate-on-scroll slide-in-right">
             <ul>
               <li>Mudah Khawatir</li>
               <li>Bimbang</li>
@@ -302,13 +312,15 @@
           </div>
         </div>
       </section>
+      <!-- Gejala End -->
 
+      <!-- Dampak -->
       <section id="dampak">
         <div class="container">
-          <div class="dampak-img">
+          <div class="dampak-img animate-on-scroll slide-in-left">
             <img src="./image/dampak.png" alt="dampak" />
           </div>
-          <div class="dampak-body">
+          <div class="dampak-body animate-on-scroll slide-in-right">
             <div class="dampak-list">
               <div class="dampak-title">
                 <h2>DAMPAK KECEMASAN</h2>
@@ -346,8 +358,11 @@
           </div>
         </div>
       </section>
+      <!-- Dampak End -->
     </main>
+    <!-- Main -->
 
+    <!-- Footer -->
     <footer>
       <div class="footer-body">
         <svg
@@ -372,16 +387,17 @@
 
       <div class="text-footer">
         <h4 class="card-title">
-          Unxious adalah website yang berfungsi mengedukasikan tentang kecemasan
-          yang disertai dengan cek kecemasan untuk mengindikasi kecemasan anda
-          saat ini
+          Unxious merupakan website yang berfungsi mengedukasikan tentang
+          kecemasan yang disertai dengan cek kecemasan untuk mengindikasi
+          kecemasan anda saat ini
         </h4>
       </div>
 
       <div class="copyright">
-        <p>©Copyright @2022 Team BackBack</p>
+        <p>Copyright &copy; 2022 Team BackBack</p>
       </div>
     </footer>
+    <!-- Footer End -->
 
     <script src="./js/index.js"></script>
   </body>
