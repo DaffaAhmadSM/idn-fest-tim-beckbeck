@@ -244,10 +244,6 @@ body {
   justify-content: space-between;
 }
 
-.mr-1 {
-  margin-right: 1rem;
-}
-
 .tingkat-cemas-card {
   display: flex;
   width: 550px;
@@ -278,11 +274,6 @@ body {
   text-align: justify;
   letter-spacing: 0.07em;
 }
-
-.flex-column {
-  flex-direction: column;
-}
-
 .tingkat-cemas-card:nth-child(2) .tingkat-cemas-card-title {
   background-color: #f7e29b;
 }
@@ -323,6 +314,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   pointer-events: none;
+  padding-left: 1rem;
+  padding-right: 5rem;
 }
 
 .faktor-kecemasan-slider-item {
