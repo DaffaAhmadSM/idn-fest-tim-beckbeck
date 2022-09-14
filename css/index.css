@@ -181,7 +181,7 @@ body {
   padding: 0.5rem 1rem;
 }
 
-#header img {
+#header .header-content > img {
   width: 100%;
   max-width: 464px;
   animation-duration: 1.5s;
