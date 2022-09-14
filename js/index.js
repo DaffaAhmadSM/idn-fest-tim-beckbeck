@@ -85,5 +85,5 @@ function scrollTrigger(selector, options) {
 }
 
 scrollTrigger(".animate-on-scroll", {
-  rootMargin: "-250px",
+  rootMargin: "-250px 0px -250px 0px",
 });
