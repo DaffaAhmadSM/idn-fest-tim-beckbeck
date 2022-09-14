@@ -4,6 +4,7 @@ const jumpTo = (id) => {
   });
 };
 
+// Navbar
 function menuMobile() {
   var x = document.getElementById("navbar-mobile");
   if (x.className === "d-none") {
@@ -24,49 +25,68 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
+// Slider
 let slider = document.querySelector(".faktor-kecemasan-slider"),
-    innerSlider = document.querySelector(".faktor-kecemasan-slider-inner"),
-    pressed = false, //클릭상태 체크
-    startx, //마우스드래그 시작점 x좌표
-    x; //마우스드래그 실시간 x좌표
+  innerSlider = document.querySelector(".faktor-kecemasan-slider-inner"),
+  pressed = false,
+  startx,
+  x;
 
+function mouseEvent() {
+  slider.addEventListener("mousedown", function (e) {
+    pressed = true;
+    startx = e.offsetX - innerSlider.offsetLeft;
+    slider.style.cursor = "grabbing";
+  });
+  slider.addEventListener("mouseenter", function () {
+    slider.style.cursor = "grab";
+  });
+  slider.addEventListener("mouseup", function () {
+    slider.style.cursor = "grab";
+  });
+  window.addEventListener("mouseup", function () {
+    pressed = false;
+  });
 
-function mouseEvent(){
-    slider.addEventListener("mousedown",function(e){
-        pressed = true;
-        startx = e.offsetX - innerSlider.offsetLeft;
-        slider.style.cursor = "grabbing";
-    })
-    slider.addEventListener("mouseenter",function(){
-        slider.style.cursor = "grab";
-    })
-    slider.addEventListener("mouseup",function(){
-        slider.style.cursor = "grab";
-    })
-    window.addEventListener("mouseup",function(){
-        pressed = false;
-    })
-}; //마우스 커서 이벤트
+  slider.addEventListener("touchstart", function (e) {
+    pressed = true;
+    startx = e.touches[0].pageX - innerSlider.offsetLeft;
+    // console.log(pressed, ' = TouchStart');
+  });
+
+  window.addEventListener("touchend", function () {
+    pressed = false;
+    // console.log(pressed, ' = touchend');
+  });
+}
 mouseEvent();
 
-function coordinate(){
-    let outer = slider.getBoundingClientRect();
-    let inner = innerSlider.getBoundingClientRect();
+function coordinate() {
+  let outer = slider.getBoundingClientRect();
+  let inner = innerSlider.getBoundingClientRect();
 
-    if( parseInt(innerSlider.style.left) > 0 ){
-        innerSlider.style.left = "0px";
-    } else if (inner.right < outer.right){
-        innerSlider.style.left = `-${inner.width - outer.width}px`;
-    }
+  if (parseInt(innerSlider.style.left) > 0) {
+    innerSlider.style.left = "0px";
+  } else if (inner.right < outer.right) {
+    innerSlider.style.left = `-${inner.width - outer.width}px`;
+  }
 }
 
-slider.addEventListener("mousemove",function(e){
-    if(!pressed) return;
-    e.preventDefault();
-    x = e.offsetX;
-    innerSlider.style.left = `${x - startx}px`;
-    coordinate();
-})
+slider.addEventListener("mousemove", function (e) {
+  if (!pressed) return;
+  e.preventDefault();
+  x = e.offsetX;
+  innerSlider.style.left = `${x - startx}px`;
+  coordinate();
+});
+
+slider.addEventListener("touchmove", function (e) {
+  if (!pressed) return;
+  e.preventDefault();
+  x = e.touches[0].pageX;
+  innerSlider.style.left = `${x - startx}px`;
+  coordinate();
+});
 
 //make animation on scroll
 function scrollTrigger(selector, options) {
